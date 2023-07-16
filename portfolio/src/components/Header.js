@@ -1,6 +1,6 @@
 export default function Header(props) {
 
-  let navigation = ["Home", "About", "Portfolio", "Resume", "Contact"];
+  let navigation = ["About", "Portfolio", "Resume", "Contact"];
 
   function renderNav(props) {
     return navigation.map((item, i) => {
@@ -8,7 +8,7 @@ export default function Header(props) {
       // let render = renderPage[i];
 
       function renderPage(props) {
-        props.page
+        return props.page === item;
       }
 
       return (

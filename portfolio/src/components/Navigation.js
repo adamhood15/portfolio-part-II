@@ -114,7 +114,6 @@ function Contact(props) {
   return (
     <div>
       <Header page="About"/>
-      {page === "Home" && <Home />}
       {page === "About" && About()}
       {page === "Projects" && <Projects />}
       {page === "Resume" && Resume()}
