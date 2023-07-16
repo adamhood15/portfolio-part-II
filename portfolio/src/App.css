@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.navbar {
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-item:hover {
+    border-radius: 10px;
+    background-color: #007bff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Home Page */
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.welcome {
+    margin-bottom: 100px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
 }
 
-.App-link {
-  color: #61dafb;
+/* Project Page */
+
+.card-deck {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* make the blur more blurry */
+}
+
+/* Make card fit content on click */
+.card:focus-within {
+    height: fit-content;
+}
+
+.card-title, .card-text, .btn-proj {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.btn-proj {
+    margin: 10px;
+}
+
+.button-link {
+   /* make linke have no underline and be white at all times */
+    text-decoration: none;
+    color: white;
+}
+
+.card-img:hover {
+    /* make the image blurry */
+    filter: blur(5px);
+}
+
+.card:hover .card-title, .card:hover .card-text, .card:hover .btn-proj {
+    opacity: 1;
+}
+
+.card-info:hover {
+    /* make a black frosted background */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Form Section */
+.contact {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    height: 75%;
+    width: 75%;
+}
+
+/* Footer Section */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    background-color: white;
+}
+
+/* Make card title and description only show up when hovered */
