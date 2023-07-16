@@ -1,19 +1,24 @@
-export default function Header(props) {
+import React, { useState } from "react";
 
+export default function Header({ setActivePage, activePage, pages }) {
+
+  // console.log(pages);
+  // console.log(activePage);
+  // console.log(activePage);
   let navigation = ["About", "Portfolio", "Resume", "Contact"];
 
-  function renderNav(props) {
+  function renderPage(i) {
+    console.log(pages[i]);
+    // return setActivePage(pages[i]);
+  }
+
+  function renderNav() {
     return navigation.map((item, i) => {
       let link = `#${item.toLowerCase()}`;
-      // let render = renderPage[i];
-
-      function renderPage(props) {
-        return props.page === item;
-      }
 
       return (
         <li key={i} className="nav-item">
-          <a className="nav-link" key={item} href={link} onClick={renderPage}>
+          <a className="nav-link" key={item} href={link}>
             {item}
           </a>
         </li>

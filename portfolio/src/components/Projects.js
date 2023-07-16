@@ -80,7 +80,7 @@ export default function Projects() {
 
     return (
       <div className="portfolio" id="portfolio-section">
-        <h1>Portfolio</h1>
+        <h1 className="portfolio-h1">Portfolio</h1>
         <div className="card-deck">{createProjectCards()}</div>
       </div>
     );
