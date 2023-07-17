@@ -85,7 +85,7 @@ export default function Projects() {
       <div>
       <div className="portfolio" id="portfolio-section">
         <h1 className="portfolio-h1">Portfolio</h1>
-        <div className="card-deck">{createProjectCards()}</div>
+        <div className="cards">{createProjectCards()}</div>
         </div>
         <div className="separator-projects"></div>
       </div>
