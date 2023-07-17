@@ -27,7 +27,7 @@ export default function Header({ setActivePage, activePage }) {
     <>
       <nav className="navbar fixed-top navbar-expand-lg ">
         <a id="name" className="navbar-brand" href="#home">
-          <span id="A">A</span><span id="d">d</span><span id="a">a</span><span id="m">m</span> <span id="H">H</span><span id="o">o</span><span id="oo">o</span><span id="d">d</span><span id="exclamation">!</span>
+           Adam Hood 
         </a>
         <button
           className="navbar-toggler"

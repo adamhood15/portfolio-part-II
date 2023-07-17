@@ -45,7 +45,7 @@ export default function Navigation({ activePage }) {
     return (
       <div>
       <div className="resume-section" id="resume">
-        <h1 class="resume-h1">Resume</h1>
+        <h1 className="resume-h1">Resume</h1>
         <div className="resume-data">
           <ul className="list-group">
             Front End Proficiencies

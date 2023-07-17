@@ -7,6 +7,7 @@ h1, h2 {
 }
 
 #name {
+    font-family: 'Monoton', cursive;
     font-size: 25px;
     margin: 10px;
 }
@@ -17,42 +18,6 @@ h1, h2 {
     border-right: 100vw solid transparent;
     border-bottom: 13.9vw solid #ffffff;
     margin-top: -13vw;
-}
-
-#A, #d, #a, #m, #H, #o, #oo, #exclamation {
-    font-family: 'Monoton'
-}
-
-#A {
-    color: #f32222;
-}
-
-#d {
-    color: #f3f322;
-}
-
-#a {
-    color: #22f322;
-}
-
-#m   {
-    color: #22f3f3;
-}
-
-#H {
-    color: #2222f3;
-}
-
-#o {
-    color: #f322f3;
-}
-
-#oo {
-    color: black;
-}
-
-#exclamation {
-    color: rgb(255, 0, 255)
 }
 
 .navbar {
