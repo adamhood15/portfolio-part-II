@@ -27,6 +27,10 @@ h1, h2 {
     color: #FBFBFF;
 }
 
+.nav-link {
+    margin-left: 10px;
+}
+
 #about {
     background-color: #657ED4;
     color: #0D0106;
@@ -42,7 +46,10 @@ h1, h2 {
     color: #0D0106;
 }
 
-
+#About:hover, #About:active {
+    border-radius: 10px;
+    background-color: #657ED4;
+}
 
 #Portfolio:hover {
     background-color: #88e788;
@@ -104,40 +111,33 @@ h1, h2 {
     margin: 20px;
 }
 
-.card-deck {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+#portfolio-github {
+    color: white;
+    font-size: 22px;
+    margin: 5px;
 }
 
-#mealMatch {
-    box-shadow: 0 0 10px green;
+#portfolio-github:hover {
+    color: #f32222;
 }
 
-#movieMatchMaker {
-    box-shadow: 0 0 10px yellow;
+.fa-display {
+    font-size: 22px;
+    color: white;
+    margin: 5px;
 }
 
-#techBlog {
-    box-shadow: 0 0 10px blue;
-}
-
-#weatherApp {
-    box-shadow: 0 0 10px black;
-}
-
-#readMeGenerator {
-    box-shadow: 0 0 10px red;
-}
-
-#eCommerce  {
-    box-shadow: 0 0 10px orange;
+.fa-display:hover {
+    color: #f32222;
 }
 
 .card {
     margin: 5%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    max-height: 50%;
 }
 
 .card:hover {
@@ -210,12 +210,14 @@ h1, h2 {
     align-items: center;
     width: 50%;
     height: 100%;
+
 }
 
 .list-group-item {
     text-align: left;
     color: #0D0106;
     border-radius: 20px!important;
+    border: 2px solid #f32222;
     margin: 10px;
     padding: 10px;
     width: 80%;
@@ -235,11 +237,28 @@ h1, h2 {
     background-color: #f32222;
     border-radius: 50px;
     margin: 20px 0 0 0;
+    border: 2px solid #ffffff;
+
 }
 
 #resume-btn-link {
     text-decoration: none;
     color: #ffffff;
+}
+
+.fa-download {
+    font-size: 25px;
+    margin: 5px;
+}
+
+#resume-btn:hover {
+    background-color: #ffffff;
+    color: #f32222;
+    border: 2px solid #f32222;
+}
+
+.fa-download:hover {
+    color: #f32222;
 }
 
 /* Contact Section */
@@ -295,6 +314,12 @@ h1, h2 {
     background-color: white;
 }
 
+.footer-icon {
+    font-size: 25px;
+    margin: 5px;
+    transition: color 0.5s;
+}
+
 .fa-linkedin-in {
     color: #f32222;
 }
@@ -311,3 +336,14 @@ h1, h2 {
     color: #e4f21d;
 }
 
+@media only screen and (min-width: 600px) {
+    #about-img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .about-info {
+        margin: 20px;
+    }
+}
+    

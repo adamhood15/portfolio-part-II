@@ -73,7 +73,7 @@ export default function Navigation({ activePage }) {
         </div>
         <button id="resume-btn" type="button" className="btn">
           <a id="resume-btn-link" href={resume} download="resume">
-            Resume
+          <i className="fa-solid fa-download"></i>
           </a>
         </button>
       </div>

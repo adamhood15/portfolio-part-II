@@ -72,12 +72,8 @@ export default function Projects() {
             <div key={project.title} id={project.id} className="card-img-overlay card-info overflow-auto">
               <h5 className="card-title">{project.title}</h5>
               <p className="card-text">{project.description}</p>
-              <button type="button" className="btn btn-primary btn-sm btn-proj">
-                <a className="button-link" target="_blank" href={project.githubLink}>GitHub</a>
-              </button>
-              <button type="button" className="btn btn-secondary btn-sm btn-proj">
-                <a className="button-link" target="_blank" href={project.deployedLink}>Deployed</a>
-              </button>
+                <a className="button-link" target="_blank" href={project.githubLink}><i id="portfolio-github" className="icon fa-brands fa-github"></i></a>
+                <a className="button-link" target="_blank" href={project.deployedLink}><i className="fa-solid fa-display"></i></a>
             </div>
           </div>
           
