@@ -1,20 +1,99 @@
-.navbar {
-    border-radius: 10px;
-    background-color: #f8f9fa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    
+* {
+    font-family: 'Roboto', sans-serif;
 }
 
-.nav-item:hover {
+h1, h2 {
+    font-family: 'Monoton', cursive;
+}
+
+#name {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.separator {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid #ffffff;
+    margin-top: -13vw;
+}
+
+#A, #d, #a, #m, #H, #o, #oo, #exclamation {
+    font-family: 'Monoton'
+}
+
+#A {
+    color: #f32222;
+}
+
+#d {
+    color: #f3f322;
+}
+
+#a {
+    color: #22f322;
+}
+
+#m   {
+    color: #22f3f3;
+}
+
+#H {
+    color: #2222f3;
+}
+
+#o {
+    color: #f322f3;
+}
+
+#oo {
+    color: black;
+}
+
+#exclamation {
+    color: rgb(255, 0, 255)
+}
+
+.navbar {
     border-radius: 10px;
-    background-color: #007bff;
+    background-color: #FBFBFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #FBFBFF;
+}
+
+#about {
+    background-color: #657ED4;
+    color: #0D0106;
+    height: fit-content;
+}
+
+#about-h1 {
+    color: #ffffff;
+}
+
+.About:hover, #Portfolio:hover, #Resume:hover, #Contact:hover {
+    border-radius: 10px;
+    color: #0D0106;
+}
+
+
+
+#Portfolio:hover {
+    background-color: #88e788;
+}
+
+#Resume:hover {
+    background-color: #f85e5e;
+}
+
+#Contact:hover {
+    background-color: #00db49;
 }
 
 /* About Page */
 .about-section {
-    height: 100vh;
     width: 100%;
-    margin: 150px 0 100px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -23,19 +102,40 @@
 }
 
 #about-img {
-    display: block;
-    height: 50%;
-    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    height: 60%;
+    width: 60%;
+    margin: 50px;
     
 }
 
+.about-info {
+    color: #0D0106;
+    border-radius: 10px;
+}
+
+.separator-about {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 10vw solid #657ED4;
+    margin-top: 10vw;
+}
+
 /* Project Page */
+#portfolio-section {
+    height: fit-content;
+    background-color: rgb(44, 44, 44);
+    width: 100vw;
+}
 
 .portfolio {
     padding: 20px;
 }
 
 .portfolio-h1 {
+    color: #ffffff;
     margin: 20px;
 }
 
@@ -43,6 +143,30 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#mealMatch {
+    box-shadow: 0 0 10px green;
+}
+
+#movieMatchMaker {
+    box-shadow: 0 0 10px yellow;
+}
+
+#techBlog {
+    box-shadow: 0 0 10px blue;
+}
+
+#weatherApp {
+    box-shadow: 0 0 10px black;
+}
+
+#readMeGenerator {
+    box-shadow: 0 0 10px red;
+}
+
+#eCommerce  {
+    box-shadow: 0 0 10px orange;
 }
 
 .card {
@@ -85,10 +209,19 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.separator-projects {
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 14.1vw solid #ffffff;
+    margin-top: -14vw;
+}
+
 /* Resume Section */
 #resume {
-    margin-top: 50px;
+    height: 75vh;
     width: 100%;
+    background-color: #f32222;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,28 +238,53 @@
 }
 
 .list-group {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.list-group-item {
+    text-align: left;
+    color: #0D0106;
+    border-radius: 20px!important;
     margin: 10px;
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-h1 {
+    color: #ffffff;
+    margin: 20px;
+    transition: background-color 0.5s;
 }
 
 #resume-btn {
-    background-color: lime;
-    border: solid 1px grey;
+    background-color: #f32222;
     border-radius: 50px;
     margin: 20px 0 0 0;
 }
 
 #resume-btn-link {
     text-decoration: none;
-    color: black;
+    color: #ffffff;
 }
 
 /* Contact Section */
 .contact {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #00db49;
 }
 
 .contact-h2 {
@@ -139,11 +297,20 @@
 }
 
 #form-btn {
-    background-color: lime;
-    border: solid 1px grey;
+    background-color: #ffffff;
+    border: solid 1px black;
     border-radius: 50px;
     margin: 20px 0 0 0;
 }
+
+.separator-contact {
+    width: 0;
+    height: 0;
+    border-left: 100vw solid transparent;
+    border-bottom: 13.9vw solid #ffffff;
+    margin-top: -13.8vw;
+}
+
 
 /* Footer Section */
 
@@ -163,4 +330,19 @@
     background-color: white;
 }
 
-/* Make card title and description only show up when hovered */
+.fa-linkedin-in {
+    color: #f32222;
+}
+
+.fa-envelope {
+    color: #657ED4;
+}
+
+.fa-github {
+    color: #00db49;
+}
+
+.fa-twitter {
+    color: #e4f21d;
+}
+

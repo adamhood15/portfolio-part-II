@@ -1,16 +1,18 @@
 import Projects from "./Projects";
 import React, { useState } from "react";
-import weddingPhoto from "../assets/images/weddingPhoto.jpeg";
+import headshot from "../assets/images/headshot.jpg";
 import resume from "../assets/resume/resume.pdf";
 import {validateEmail} from "../utils/helpers";
 
-export default function Navigation({ pages, setActivePage, activePage }) {
+export default function Navigation({ activePage }) {
   function About() {
     return (
+      <div>
+      <div className="separator-about"></div>
       <div className="about-section" id="about">
-        <img id="about-img" src={weddingPhoto} alt="Adam Hood" />
+        <img id="about-img" src={headshot} alt="Adam Hood" />
         <div className="about-info">
-          <h1>About</h1>
+          <h1 id="about-h1">About</h1>
           <p className="about-text">
             Hey there! My name is Adam Hood and I am a Full Stack Web Developer.
             I am currently a student at Rice University's Full Stack Coding
@@ -34,46 +36,48 @@ export default function Navigation({ pages, setActivePage, activePage }) {
           </p>
         </div>
       </div>
+
+      </div>
     );
   }
 
   function Resume() {
     return (
+      <div>
       <div className="resume-section" id="resume">
-        <h1>Resume</h1>
+        <h1 class="resume-h1">Resume</h1>
         <div className="resume-data">
           <ul className="list-group">
             Front End Proficiencies
-            <li className="list-group-item list-group-item-success">HTML</li>
-            <li className="list-group-item list-group-item-success">
+            <li className="list-group-item">HTML</li>
+            <li className="list-group-item">
               JavaScript
             </li>
-            <li className="list-group-item list-group-item-success">CSS</li>
-            <li className="list-group-item list-group-item-success">React</li>
-            <li className="list-group-item list-group-item-success">
+            <li className="list-group-item">CSS</li>
+            <li className="list-group-item">React</li>
+            <li className="list-group-item">
               Bootstrap
             </li>
-            <li className="list-group-item list-group-item-success">jQuery</li>
-            <li className="list-group-item list-group-item-success">
-              Handlebars
-            </li>
+            <li className="list-group-item">jQuery</li>
+            
           </ul>
           <ul className="list-group">
             Back End Proficiencies
-            <li className="list-group-item list-group-item-info">Node.js</li>
-            <li className="list-group-item list-group-item-info">Express.js</li>
-            <li className="list-group-item list-group-item-info">MySQL</li>
-            <li className="list-group-item list-group-item-info">Sequelize</li>
-            <li className="list-group-item list-group-item-info">MongoDB</li>
-            <li className="list-group-item list-group-item-info">Mongoose</li>
-            <li className="list-group-item list-group-item-info">GraphQL</li>
+            <li className="list-group-item ">Node.js</li>
+            <li className="list-group-item ">Express.js</li>
+            <li className="list-group-item ">MySQL</li>
+            <li className="list-group-item ">Sequelize</li>
+            <li className="list-group-item ">MongoDB</li>
+            <li className="list-group-item ">Mongoose</li>
           </ul>
         </div>
-        <button id="resume-btn" type="button" class="btn">
+        <button id="resume-btn" type="button" className="btn">
           <a id="resume-btn-link" href={resume} download="resume">
             Resume
           </a>
         </button>
+      </div>
+      <div className="separator"></div>
       </div>
     );
   }
@@ -113,6 +117,7 @@ export default function Navigation({ pages, setActivePage, activePage }) {
     };
 
     return (
+      <div>
       <div className="contact" id="contact">
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2 className="contact-h2">Contact</h2>
@@ -164,18 +169,20 @@ export default function Navigation({ pages, setActivePage, activePage }) {
           </button>
         </form>
       </div>
+      <div className="separator-contact"></div>
+      </div>
     );
   }
 
   return (
     <div>
-      {activePage === pages[0] ? (
+      {activePage === "About" ? (
         About()
-      ) : activePage === pages[1] ? (
+      ) : activePage === "Portfolio" ? (
         <Projects />
-      ) : activePage === pages[2] ? (
+      ) : activePage === "Contact" ? (
         Contact()
-      ) : activePage === pages[3] ? (
+      ) : activePage === "Resume" ? (
         Resume()
       ) : null}
     </div>

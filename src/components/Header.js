@@ -1,15 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-export default function Header({ setActivePage, activePage, pages }) {
+export default function Header({ setActivePage, activePage }) {
 
-  // console.log(pages);
-  // console.log(activePage);
-  // console.log(activePage);
   let navigation = ["About", "Portfolio", "Resume", "Contact"];
 
   function renderPage(i) {
-    console.log(pages[i]);
-    // return setActivePage(pages[i]);
+    setActivePage(i.target.text);
+    return activePage;
   }
 
   function renderNav() {
@@ -18,7 +15,7 @@ export default function Header({ setActivePage, activePage, pages }) {
 
       return (
         <li key={i} className="nav-item">
-          <a className="nav-link" key={item} href={link}>
+          <a className="nav-link" id={item} key={item} href={link} onClick={renderPage}>
             {item}
           </a>
         </li>
@@ -28,9 +25,9 @@ export default function Header({ setActivePage, activePage, pages }) {
 
   return (
     <>
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#home">
-          Adam Hood
+      <nav className="navbar fixed-top navbar-expand-lg ">
+        <a id="name" className="navbar-brand" href="#home">
+          <span id="A">A</span><span id="d">d</span><span id="a">a</span><span id="m">m</span> <span id="H">H</span><span id="o">o</span><span id="oo">o</span><span id="d">d</span><span id="exclamation">!</span>
         </a>
         <button
           className="navbar-toggler"

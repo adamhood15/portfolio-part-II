@@ -6,25 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState } from "react";
 
 function App() {
-  const [pages] = useState([
-    { name: "about" },
-    { name: "portfolio" },
-    { name: "resume" },
-    { name: "contact" },
-  ]);
 
-  const [activePage, setActivePage] = useState(pages[2]);
+  const [activePage, setActivePage] = useState("About");
 
   return (
     <div className="portfolio-app">
       <Header
-        pages={pages}
         setActivePage={setActivePage}
         activePage={activePage}
       />
 
       <Navigation
-        pages={pages}
         setActivePage={setActivePage}
         activePage={activePage}
       />
