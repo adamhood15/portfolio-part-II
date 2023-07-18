@@ -177,13 +177,13 @@ export default function Navigation({ activePage }) {
   return (
     <div>
       {activePage === "About" ? (
-        About()
+        <About />
       ) : activePage === "Portfolio" ? (
         <Projects />
       ) : activePage === "Contact" ? (
-        Contact()
+        <Contact />
       ) : activePage === "Resume" ? (
-        Resume()
+        <Resume />
       ) : null}
     </div>
   );

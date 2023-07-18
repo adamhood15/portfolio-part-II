@@ -5,18 +5,20 @@ export default function Header({ setActivePage, activePage }) {
   let colors = ['#657ED4', '#2c2c2c', '#f85e5e', '#00db49']
 
   function renderPage(i) {
-    setActivePage(i.target.text);
-
+    setActivePage(() => i.target.text);
+   
     document.getElementById(activePage).style.textDecoration = `none`;
 
-    let currentPage = i.target.style.textDecoration
-
-    i.target.text === "About" ? currentPage = `underline #657ED4` 
-    : i.target.text === "Portfolio" ? currentPage = `underline #2c2c2c`
-    : i.target.text === "Resume" ? currentPage = `underline #f85e5e`
-    : currentPage = `underline #00db49`
+    if (i.target.text === "About") {
+    i.target.style.textDecoration = `underline 2px #657ED4`;
+    } else if (i.target.text === "Portfolio") {
+      i.target.style.textDecoration = `underline 2px #2c2c2c`;
+    } else if (i.target.text === "Resume") {
+      i.target.style.textDecoration = `underline 2px #f85e5e`;
+    } else {
+      i.target.style.textDecoration = `underline 2px #00db49`;
+    }
     
-    return activePage;
   }
 
 
