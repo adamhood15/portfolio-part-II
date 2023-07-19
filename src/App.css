@@ -219,6 +219,11 @@ h1, h2 {
     align-items: center;
 }
 
+.skills-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
 .resume-h1 {
     color: #ffffff;
     margin: 20px;

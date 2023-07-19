@@ -2,11 +2,12 @@ import React from "react";
 export default function Header({ setActivePage, activePage }) {
 
   let navigation = ["About", "Portfolio", "Resume", "Contact"];
-  let colors = ['#657ED4', '#2c2c2c', '#f85e5e', '#00db49']
 
   function renderPage(i) {
     setActivePage(() => i.target.text);
    
+    console.log(i.target.text);
+    console.log(activePage);
     document.getElementById(activePage).style.textDecoration = `none`;
 
     if (i.target.text === "About") {
