@@ -4,12 +4,12 @@ import movieMatchMaker from "../assets/images/movieMatchMaker.png";
 import readMeGenerator from "../assets/images/readMeGenerator.png";
 import techBlog from "../assets/images/techBlog.png";
 import weatherApp from "../assets/images/weatherApp.png";
-// import weddingPhoto from "../assets/images/weddingPhoto.png";
 
 export default function Projects() {
     let projects = [
       {
         title: "Meal Match",
+        id: "mealMatch",
         description:
           "Forget everything you know about Meal Planning. Gone are the days of spending the bulk of your Sunday afternoon trying to figure out what your family wants to eat. No more wasting time putting together a grocery list of all the ingredients you need for each recipe. Let us help you take back your time and never look back.",
         image: mealMatch,
@@ -18,6 +18,7 @@ export default function Projects() {
       },
       {
         title: "Movie Match Maker",
+        id: "movieMatchMaker",
         description:
           "This application is a movie recommendation engine. It uses the latest technologies to ensure that you are getting the best movie recommendations. This application uses React.js, Redux, and the MovieDB API to give you the best movie recommendations.",
         image: movieMatchMaker,
@@ -26,6 +27,7 @@ export default function Projects() {
       },
       {
         title: "Tech Blog",
+        id: "techBlog",
         description:
           "This application is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. This application uses Express.js API and Sequelize to interact with a MySQL database.",
         image: techBlog,
@@ -34,6 +36,7 @@ export default function Projects() {
       },
       {
         title: "Weather App",
+        id: "weatherApp",
         description:
           "This application is a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve weather data for cities. This application uses localStorage to store any persistent data.",
         image: weatherApp,
@@ -42,6 +45,7 @@ export default function Projects() {
       },
       {
         title: "Read Me Generator",
+        id: "readMeGenerator",
         description:
           "This application is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. This application uses the Inquirer package to prompt the user for their GitHub username and other information pertaining to the project the README is for.",
         image: readMeGenerator,
@@ -50,6 +54,7 @@ export default function Projects() {
       },
       {
         title: "E-Commerce Back End",
+        id: "eCommerce",
         description:
           "This application is the back end for an e-commerce site. It uses the latest technologies to ensure that your e-commerce site is running smoothly and efficiently. This application uses Express.js API and Sequelize to interact with a MySQL database.",
         image: eCommerce,
@@ -61,27 +66,28 @@ export default function Projects() {
     function createProjectCards() {
       return projects.map((project, i) => {
         return (
+          
           <div key={i} id="portfolio" className="card bg-dark text-white">
             <img key={project.image} className="card-img" src={project.image} alt={project.title}></img>
-            <div key={project.title} className="card-img-overlay card-info overflow-auto">
+            <div key={project.title} id={project.id} className="card-img-overlay card-info overflow-auto">
               <h5 className="card-title">{project.title}</h5>
               <p className="card-text">{project.description}</p>
-              <button type="button" className="btn btn-primary btn-sm btn-proj">
-                <a className="button-link" target="_blank" href={project.githubLink}>GitHub</a>
-              </button>
-              <button type="button" className="btn btn-secondary btn-sm btn-proj">
-                <a className="button-link" target="_blank" href={project.deployedLink}>Deployed</a>
-              </button>
+                <a className="button-link" target="_blank" href={project.githubLink}><i id="portfolio-github" className="icon fa-brands fa-github"></i></a>
+                <a className="button-link" target="_blank" href={project.deployedLink}><i className="fa-solid fa-display"></i></a>
             </div>
           </div>
+          
         );
       });
     }
 
     return (
+      <div>
       <div className="portfolio" id="portfolio-section">
-        <h1>Portfolio</h1>
-        <div className="card-deck">{createProjectCards()}</div>
+        <h1 className="portfolio-h1">Portfolio</h1>
+        <div className="cards">{createProjectCards()}</div>
+        </div>
+        <div className="separator-projects"></div>
       </div>
     );
   }

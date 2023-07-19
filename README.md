@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# README Generator
+  ![license](https://img.shields.io/static/v1?label=License&message=MIT&color=$blue)
+  ## Description
+  Portfolio Part II is my new and updated portfolio to display some of the skills I have learned during my time in the Rice Coding Bootcamp. This was the very first React Application that I built from start to finish and while challenging at times I found the experience to be very rewarding. 
+  <font size='2'>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  ## Table of Contents
+  * [Installation](#installation)
 
-## Available Scripts
+  * [Usage](#usage)
 
-In the project directory, you can run:
+  * [License](#license)
 
-### `npm start`
+  * [Contributing](#contributing)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * [Tests](#tests)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  * [Questions](#questions)
 
-### `npm test`
+  * [Credits](#credits)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  </font>
 
-### `npm run build`
+  ## Installation
+  Clone the repository onto your local machine. Open the file in your preferred code editor. Open an integrated terminal for the index.js file. 
+  
+  To install dependencies, run the following command in the command line npm i.
+  
+  ## Usage
+  After cloning the repo and installing all dev dependencies, you can run the application by typing in npm run start which will open up a browser for you to view.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  ![screenshot of application](./assets/screenshot.png)
+  
+  
+  ## License
+  Notice: This application is covered under the ![license](https://img.shields.io/static/v1?label=License&message=MIT&color=$blue) license.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  Link: https://img.shields.io/static/v1?label=License&message=MIT&color=$blue
 
-### `npm run eject`
+  ## Contributing
+  At this time there are no plans to include contributions to this project. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
+  ## Questions
+  Please reach out to me below if you have any questions.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  
+  GitHub: [adamhood15](https://github.com/adamhood15)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  Email: adamhood15@gmail.com
+  
+  ## Credits
+  I am the sole collaborator on this project. Rice University provided the starter code. 
