@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://adamhood15.github.io/portfolio-part-II",
   "private": true,
+  "homepage": "https://adamhood15.github.io/portfolio-part-II",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
