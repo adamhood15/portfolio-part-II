@@ -4,6 +4,7 @@ import movieMatchMaker from "../assets/images/movieMatchMaker.png";
 import readMeGenerator from "../assets/images/readMeGenerator.png";
 import techBlog from "../assets/images/techBlog.png";
 import weatherApp from "../assets/images/weatherApp.png";
+import theMashUp from "../assets/images/theMashUp.png";
 
 export default function Projects() {
     let projects = [
@@ -61,6 +62,14 @@ export default function Projects() {
         githubLink: "https://github.com/adamhood15/e-commerce-back-end",
         deployedLink: "",
       },
+      {
+        title: "The Mash Up",
+        id: "theMashUp",
+        description: "This application is a e-commerce platform for users to buy and sell music items online. It uses the latest technologies to ensure that your e-commerce site is running smoothly and efficiently",
+        image: theMashUp,
+        githubLink: "https://github.com/Phil-Pfister/The-Mash-Up",
+        deployedLink: "https://the-mash-up-b8a52234a88b.herokuapp.com/",
+      }
     ];
 
     function createProjectCards() {
