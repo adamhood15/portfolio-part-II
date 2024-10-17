@@ -9,25 +9,13 @@ export default function About() {
         <div className="about-info">
           <h1 id="about-h1">About</h1>
           <p className="about-text">
-            Hey there! My name is Adam Hood and I am a Full Stack Web Developer.
-            I am currently a student at Rice University's Full Stack Coding
-            Bootcamp and will be earning my certificate at the beginning of
-            August 2023.
-            <br></br>
-            <br></br>
-            My passion for web development started in the Summer of 2022 when I
-            decided to make my own video game. I jumped head first into learning
-            C# and after a full summer of learning I decided I wanted to switch
-            careers from teaching and go full time into web development.
-            <br></br>
-            <br></br>
-            I'm experienced in HTML, CSS, C#, and JavaScript. I've also built
-            multiple full stack web applications incorporating Node.js, MySQL,
-            Sequelize, and building those applications using a Model View
-            Controller architecture. I am an excellent communicator, an
-            extremely hard worker, and am eager to learn everything I can about
-            web development. Come and take a look at all the great work I've
-            done!
+          I’m Adam Hood, a Junior Web Developer based in Houston, TX, with a passion for creating streamlined and effective digital solutions. Currently, I work at Love Advertising, where I’ve had the opportunity to develop and deploy hundreds of emails using HTML and CSS with a 98.5% success rate. I've also focused on team development by creating onboarding materials and helping train junior developers, helping to establish a smoother workflow for the email department.
+<br></br>
+<br></br>
+My expertise spans a variety of frontend technologies, including HTML5, CSS, jQuery, JavaScript, Bootstrap, and MJML, while on the backend, I work with Node.js, Express, and C#. This combination of skills allows me to create robust, user-friendly applications and enhance email performance and engagement. Additionally, I have experience leveraging SQL to segment data extensions in Salesforce, optimizing email sends and targeting.
+<br></br>
+<br></br>
+In my personal projects, I’ve built full-stack applications like a scalable web app for meal planning, which utilizes third-party APIs and a MySQL database to help users save time during meal preparation. I also enjoy working on Unity game design, where I develop interactive experiences using C#. Through all my projects, I strive to create solutions that are efficient, scalable, and tailored to user needs.
           </p>
         </div>
       </div>

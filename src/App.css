@@ -27,6 +27,11 @@ h1, h2 {
     color: #FBFBFF;
 }
 
+#resume-btn-link {
+    text-decoration: none !important;
+    color: #ffffff !important;
+}
+
 .nav-link {
     margin-left: 10px;
 }
@@ -130,8 +135,8 @@ h1, h2 {
     margin: 5%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 40% !important;
+    max-height: 40% !important;
 }
 
 .cards {
@@ -176,13 +181,26 @@ h1, h2 {
 
 /* Resume Section */
 #resume {
-    height: 75vh;
+    scroll-margin-top: 0;
+    padding-top: 0;
     width: 100%;
     background-color: #f32222;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.logo {
+    background: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 4px solid rgba(0, 0, 0, 0.82);
+    transition: transform 0.7s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.45); /* Slightly enlarges the logo on hover */
 }
 
 .resume-data {
@@ -198,7 +216,7 @@ h1, h2 {
     font-size: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     width: 50%;
     height: 100%;
@@ -208,7 +226,7 @@ h1, h2 {
 .list-group-item {
     text-align: left;
     color: #0D0106;
-    border-radius: 20px!important;
+    border-radius: 20px !important;
     border: 2px solid #f32222;
     margin: 10px;
     padding: 10px;
@@ -226,15 +244,21 @@ h1, h2 {
 
 .resume-h1 {
     color: #ffffff;
+    font-size: 5em;
     margin: 20px;
     transition: background-color 0.5s;
 }
 
+#resume {
+    padding: 30px;
+}
+
 #resume-btn {
-    background-color: #f32222;
+    background-color: #000000;
     border-radius: 50px;
     margin: 20px 0 0 0;
-    border: 2px solid #ffffff;
+    padding: 10px;
+    border: 4px solid #ffffff;
 
 }
 
@@ -249,14 +273,12 @@ h1, h2 {
 }
 
 #resume-btn:hover {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #f32222;
-    border: 2px solid #f32222;
+    border: 4px solid #000000;
 }
 
-.fa-download:hover {
-    color: #f32222;
-}
+
 
 /* Contact Section */
 .contact {
@@ -332,6 +354,21 @@ h1, h2 {
 .fa-twitter {
     color: #e4f21d;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 
 @media only screen and (min-width: 600px) {
     #about-img {

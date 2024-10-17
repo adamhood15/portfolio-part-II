@@ -1,0 +1,28 @@
+{
+    "logos": [
+        { "name": "Bootstrap", "image": "./images/logos/bootstrap.svg" },
+        { "name": "CSS", "image": "./images/logos/css.svg" },
+        { "name": "HTML", "image": "./images/logos/html-5.svg" },
+        { "name": "JavaScript", "image": "./images/logos/javascript.svg" },
+        { "name": "React", "image": "./images/logos/react.svg" },
+        { "name": "EOA", "image": "./images/logos/eoa.webp" },
+        { "name": "Google Analytics", "image": "./images/logos/google-analytics.svg" },
+        { "name": "Google Tag Manager", "image": "./images/logos/google-tag-manager.svg" },
+        { "name": "HubSpot", "image": "./images/logos/hubspot.svg" },
+        { "name": "Express", "image": "./images/logos/express.svg" },
+        { "name": "MongoDB", "image": "./images/logos/mongodb.svg" },
+        { "name": "Node", "image": "./images/logos/node.svg" },
+        { "name": "WordPress", "image": "./images/logos/wordpress.svg" },
+        { "name": "jQuery", "image": "./images/logos/jquery.svg" },
+        { "name": "Tailwind", "image": "./images/logos/tailwind.svg" },
+        { "name": "Sequelize", "image": "./images/logos/sequelize.svg" },
+        { "name": "Salesforce", "image": "./images/logos/salesforce.svg" },
+        { "name": "Figma", "image": "./images/logos/figma.svg" },
+        { "name": "Photoshop", "image": "./images/logos/photoshop.svg" },
+        { "name": "MySQL", "image": "./images/logos/mysql.svg" },
+        { "name": "Mongoose", "image": "./images/logos/mongoose.png" },
+        { "name": "MJML", "image": "./images/logos/mjml.svg" },
+        { "name": "Marketo", "image": "./images/logos/marketo.svg" },
+        { "name": "Mailchimp", "image": "./images/logos/mailchimp.svg" }
+    ]
+}

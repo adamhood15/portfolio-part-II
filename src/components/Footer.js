@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="https://twitter.com/AdamHood171992" target="_blank">
               <i className="footer-icon icon fa-brands fa-twitter"></i>
             </a>
-            <a href="mailto:adamhood3700@gmail.com" target="_blank">
+            <a href="mailto:adamhood15@gmail.com" target="_blank">
               <i className="footer-icon icon fa-solid fa-envelope"></i>
             </a>
         </div>

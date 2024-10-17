@@ -40,7 +40,7 @@ export default function Header({ setActivePage, activePage }) {
   return (
     <>
       <nav className="navbar fixed-top navbar-expand-lg ">
-        <a id="name" className="navbar-brand" href="#home">
+        <a id="name" className="navbar-brand" href="#about">
            Adam Hood 
         </a>
         <button
