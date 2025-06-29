@@ -5,9 +5,17 @@ import readMeGenerator from "../assets/images/readMeGenerator.png";
 import techBlog from "../assets/images/tech-blog.png";
 import weatherApp from "../assets/images/weatherApp.png";
 import theMashUp from "../assets/images/theMashUp.png";
+import tthCalendar from "../assets/images/tth-calendar.jpeg";
 
 export default function Projects() {
     let projects = [
+      {
+        title: "Typhoon Texas Events Calendar",
+        id: "typhoonTexasEventsCalendar",
+        description: "A custom-built, full-featured events and operations calendar for Typhoon Texas Waterparks. This solution dynamically pulls event and operating hours data using PHP, then renders a responsive, rolling calendar interface with HTML, CSS, and JavaScript. Designed for flexibility and performance, the calendar updates in real time based on seasonal schedules and special events, allowing guests to easily view park hours, weather-related updates, and event details at a glance. The system is optimized for both desktop and mobile devices and was built with maintainability and user experience in mind.",
+        image: tthCalendar,
+        deployedLink: "https://typhoontexas.com/houston/hours-and-location/",
+      },
       {
         title: "The Mash Up",
         id: "theMashUp",
@@ -82,7 +90,9 @@ export default function Projects() {
             <div key={project.title} id={project.id} className="card-img-overlay card-info overflow-auto">
               <h5 className="card-title">{project.title}</h5>
               <p className="card-text">{project.description}</p>
-              <a className="button-link" target="_blank" href={project.githubLink}><i id="portfolio-github" className="icon fa-brands fa-github"></i></a>
+              {project.githubLink && (
+                  <a className="button-link" target="_blank" href={project.githubLink}><i id="portfolio-github" className="icon fa-brands fa-github"></i></a>
+              )}
               {project.deployedLink && (
                 <a className="button-link" target="_blank" href={project.deployedLink}><i className="fa-solid fa-display"></i></a>
               )}

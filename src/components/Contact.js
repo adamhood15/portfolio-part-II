@@ -24,12 +24,13 @@ export default function Contact() {
       e.preventDefault();
 
       if (!validateEmail(email) || !name || !message) {
-        alert("Please fill out all fields correctly.");
+        alert("Please submit a name, email and message before submitting.");
         setErrorMessage("Email, name, and message fields are required.");
         return;
+      } else {
+        alert("Thanks for reaching out to me! I will respond to you as soon as possible.")
       }
 
-      console.log(name + ' your message was sent!');
       setName("");
       setEmail("");
       setMessage("");
@@ -82,7 +83,7 @@ export default function Contact() {
             type="submit"
             onClick={handleSubmit}
             id="form-btn"
-            className="btn "
+            className="btn btn-contact"
           >
             Submit
           </button>

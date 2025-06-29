@@ -38,7 +38,7 @@ export default function Resume() {
     <div >
       <div className="resume-section" id="resume">
         <h1 className="resume-h1 row">SKILLS</h1>
-        <button id="resume-btn" type="button" className="btn bg-black row ">
+        <button id="resume-btn" type="button" className="btn bg-black row btn-resume">
           <a id="resume-btn-link" className="col m-2" href={resume} download="resume">
              Resume <i className="fa-solid fa-download"></i>
           </a>

@@ -23,7 +23,7 @@ h1, h2 {
 .navbar {
     border-radius: 10px;
     background-color: #FBFBFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     color: #FBFBFF;
 }
 
@@ -35,6 +35,8 @@ h1, h2 {
 .nav-link {
     margin-left: 10px;
 }
+
+
 
 #about {
     background-color: #657ED4;
@@ -134,7 +136,7 @@ h1, h2 {
 .card {
     margin: 5%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px #000000;
     max-width: 40% !important;
     max-height: 40% !important;
 }
@@ -192,11 +194,11 @@ h1, h2 {
 }
 
 .logo {
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 4px solid rgba(0, 0, 0, 0.82);
-    transition: transform 0.7s ease; /* Smooth transition */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    transition: transform 0.4s ease-in-out; 
+    cursor: pointer;
 }
 
 .logo:hover {
@@ -254,11 +256,10 @@ h1, h2 {
 }
 
 #resume-btn {
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 50px;
     margin: 20px 0 0 0;
     padding: 10px;
-    border: 4px solid #ffffff;
 
 }
 
@@ -274,8 +275,8 @@ h1, h2 {
 
 #resume-btn:hover {
     background-color: #000000;
-    color: #f32222;
-    border: 4px solid #000000;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+
 }
 
 
@@ -301,9 +302,13 @@ h1, h2 {
 
 #form-btn {
     background-color: #ffffff;
-    border: solid 1px black;
     border-radius: 50px;
-    margin: 20px 0 0 0;
+    margin: 0 0 0 0;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .9);
+}
+
+#form-btn:hover {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .9);
 }
 
 .separator-contact {
@@ -320,6 +325,8 @@ h1, h2 {
 .footer {
     display: flex;
     justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .9);
+    border-radius: 10px 10px 0 0;
 }
 
 .container {
@@ -337,6 +344,10 @@ h1, h2 {
     font-size: 25px;
     margin: 5px;
     transition: color 0.5s;
+}
+
+.footer-icon:hover {
+    color: #000000;
 }
 
 .fa-linkedin-in {
@@ -397,7 +408,7 @@ h1, h2 {
 
     .separator-about {
         border-bottom: 4vw solid #657ED4;
-        margin-top: 4vw;
+        margin-top: 1vw;
     }
 
     .about-info {

@@ -9,13 +9,16 @@ export default function About() {
         <div className="about-info">
           <h1 id="about-h1">About</h1>
           <p className="about-text">
-          I’m Adam Hood, a Junior Web Developer based in Houston, TX, with a passion for creating streamlined and effective digital solutions. Currently, I work at Love Advertising, where I’ve had the opportunity to develop and deploy hundreds of emails using HTML and CSS with a 98.5% success rate. I've also focused on team development by creating onboarding materials and helping train junior developers, helping to establish a smoother workflow for the email department.
+          I'm Adam Hood, a Web Developer based in Houston, TX, with a focus on building efficient, user-friendly digital experiences. At Pyek, I helped grow the company’s web presence from a single landing page to a 45-page, fully responsive website, built with accessibility and long-term maintainability in mind. I also designed and developed an interactive events calendar that improved average engagement time by over 50%, using UX research and testing to guide key decisions.
 <br></br>
 <br></br>
-My expertise spans a variety of frontend technologies, including HTML5, CSS, jQuery, JavaScript, Bootstrap, and MJML, while on the backend, I work with Node.js, Express, and C#. This combination of skills allows me to create robust, user-friendly applications and enhance email performance and engagement. Additionally, I have experience leveraging SQL to segment data extensions in Salesforce, optimizing email sends and targeting.
+In addition to web development, I reworked and streamlined email templates to improve rendering across major clients, leading to a 32.9% increase in click rates and an 8.6% boost in open rates. I regularly run A/B tests and performance reviews on landing pages, which have helped improve conversion rates by an average of 7%.
 <br></br>
 <br></br>
-In my personal projects, I’ve built full-stack applications like a scalable web app for meal planning, which utilizes third-party APIs and a MySQL database to help users save time during meal preparation. I also enjoy working on Unity game design, where I develop interactive experiences using C#. Through all my projects, I strive to create solutions that are efficient, scalable, and tailored to user needs.
+Before Pyek, I worked at Love Advertising, where I developed over 180 emails with a 98.5% accuracy rate using HTML and CSS. I collaborated with designers and marketers to deliver award-winning campaigns for brands like Phillips 66 and Typhoon Texas. I also created onboarding guides and helped train junior developers, improving our team’s workflow and onboarding speed.
+<br></br>
+<br></br>
+My skill set includes HTML5, CSS, JavaScript, jQuery, Bootstrap, MJML, Node.js, Express, C#, and SQL. I’ve also built full-stack apps for personal projects, like a meal planning platform that integrates third-party APIs and a MySQL database. In my spare time, I explore game design in Unity using C#, always looking for new ways to sharpen my problem-solving skills and build better digital experiences.
           </p>
         </div>
       </div>
