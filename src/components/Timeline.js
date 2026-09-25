@@ -25,12 +25,10 @@ export default function Timeline() {
         <div className="timeline-hero-intro">
           <h1 className="timeline-hero-name">Adam Hood</h1>
           <p className="timeline-hero-text">
-            I'm a Web Developer based in Houston, TX, who builds efficient,
-            user-friendly digital experiences. At Pyek, I helped grow the
-            company's web presence from a single landing page to a 45-page,
-            fully responsive site, and designed an interactive events
-            calendar that improved engagement time by over 50%. Scroll down
-            to see how that work has evolved over the years.
+            I'm a Web Developer based in Houston, TX, who builds beautiful, modern, efficient, user experiences.
+            I specialize in creating responsive, accessible, and user-friendly websites and applications that 
+            help businesses grow their online presence. 
+            
           </p>
         </div>
       </section>

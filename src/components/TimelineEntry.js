@@ -49,6 +49,7 @@ function TitleSticker({ shape }) {
 
 export default function TimelineEntry({ project, index, isLeft, accentClassName, onSelect }) {
   const [dotRef, isRevealed] = useLineTouch();
+  const stat = project.stat || DEMO_STATS[index % DEMO_STATS.length];
 
   return (
     <div
@@ -67,17 +68,17 @@ export default function TimelineEntry({ project, index, isLeft, accentClassName,
             <span className="timeline-entry-category">Personal Project</span>
           )}
           <div className="timeline-entry-image-frame">
-            <img className="timeline-entry-image" src={project.images[0]} alt={project.title} />
+            <img
+              className="timeline-entry-image"
+              src={project.thumbnail || project.images[0]}
+              alt={project.title}
+            />
           </div>
           <h3 className="timeline-entry-title">{project.title}</h3>
           <p className="timeline-entry-excerpt">{project.description}</p>
           <div className="timeline-entry-stat">
-            <span className="timeline-entry-stat-value">
-              {DEMO_STATS[index % DEMO_STATS.length].value}
-            </span>
-            <span className="timeline-entry-stat-label">
-              {DEMO_STATS[index % DEMO_STATS.length].label}
-            </span>
+            <span className="timeline-entry-stat-value">{stat.value}</span>
+            <span className="timeline-entry-stat-label">{stat.label}</span>
           </div>
           <span className="timeline-entry-cta">
             View case study <i className="fa-solid fa-arrow-right"></i>

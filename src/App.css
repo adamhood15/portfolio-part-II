@@ -755,6 +755,7 @@ h1, h2 {
     font-size: 2.1em;
     line-height: 1;
     color: var(--accent);
+    text-shadow: 2px 2px 3px #656565;
 }
 
 .timeline-dot {
@@ -1124,6 +1125,69 @@ h1, h2 {
     margin-bottom: 15px;
 }
 
+.project-modal-stat {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-modal-stat-value {
+    font-family: var(--font-title);
+    font-size: 2em;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent);
+}
+
+.project-modal-stat-label {
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-gray-muted);
+}
+
+.project-modal-story-section {
+    margin-bottom: 24px;
+}
+
+.project-modal-story-section:last-child {
+    margin-bottom: 0;
+}
+
+.project-modal-story-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.project-modal-story-icon {
+    font-size: 1.2em;
+    color: var(--accent);
+}
+
+.project-modal-story-heading {
+    font-family: var(--font-heading);
+    font-size: 1.6em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+    margin: 0;
+}
+
+.project-modal-story-quote {
+    font-family: var(--font-title);
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--accent);
+    border-left: 4px solid var(--accent);
+    padding-left: 16px;
+    margin: 16px 0;
+    line-height: 1.4;
+}
+
 .project-modal-highlights {
     list-style: none;
     padding-left: 4px;
@@ -1148,11 +1212,22 @@ h1, h2 {
     transform: rotate(45deg);
 }
 
+.project-modal-pill-group {
+    margin-bottom: 20px;
+}
+
+.project-modal-pill-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-gray-muted);
+    margin: 0 0 8px 0;
+}
+
 .project-modal-tech {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 20px;
 }
 
 .project-modal .tech-pill {
