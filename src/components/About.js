@@ -9,7 +9,7 @@ export default function About() {
         <div className="about-info">
           <h1 id="about-h1">About</h1>
           <p className="about-text">
-          I'm Adam Hood, a Web Developer based in Houston, TX, with a focus on building efficient, user-friendly digital experiences. At Pyek, I helped grow the company’s web presence from a single landing page to a 45-page, fully responsive website, built with accessibility and long-term maintainability in mind. I also designed and developed an interactive events calendar that improved average engagement time by over 50%, using UX research and testing to guide key decisions.
+          I'm Adam Hood, a Web Developer based in Houston, TX, with a focus on building delightful, modern, efficient, user-friendly digital experiences.
 <br></br>
 <br></br>
 In addition to web development, I reworked and streamlined email templates to improve rendering across major clients, leading to a 32.9% increase in click rates and an 8.6% boost in open rates. I regularly run A/B tests and performance reviews on landing pages, which have helped improve conversion rates by an average of 7%.
