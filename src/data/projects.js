@@ -1,3 +1,30 @@
+import attractionsHero from "../assets/images/attractions/attractions-hero.jpg";
+import attractionsRide from "../assets/images/attractions/attractions-ride.jpg";
+import attractionsQuickFacts from "../assets/images/attractions/attractions-quick-facts.jpg";
+import attractionsMap from "../assets/images/attractions/attractions-map.jpg";
+import attractionsSafety from "../assets/images/attractions/attractions-safety.jpg";
+import attractionsGallery from "../assets/images/attractions/attractions-gallery.jpg";
+import attractionsRelated from "../assets/images/attractions/attractions-related.jpg";
+import attractionsCta from "../assets/images/attractions/attractions-cta.jpg";
+import attractionsBefore from "../assets/images/attractions/attractions-before.jpg";
+import draftHouseLogo from "../assets/images/draft-house/draft-house-logo.png";
+import draftHouseDraft from "../assets/images/draft-house/app-draft.png";
+import draftHouseHome from "../assets/images/draft-house/app-home.png";
+import draftHouseLanding from "../assets/images/draft-house/app-landing.png";
+import draftHouseLobby from "../assets/images/draft-house/app-lobby.png";
+import draftHouseLogin from "../assets/images/draft-house/app-login.png";
+import draftHousePlayers from "../assets/images/draft-house/app-players.png";
+import draftHouseSetup from "../assets/images/draft-house/app-setup.png";
+import ballKnowledgeLogo from "../assets/images/ball-knowledge/logo-512x512.png";
+import ballKnowledgeSignIn from "../assets/images/ball-knowledge/sign-in.png";
+import ballKnowledgeDashboardEmpty from "../assets/images/ball-knowledge/dashboard-empty.png";
+import ballKnowledgeDashboard from "../assets/images/ball-knowledge/dashboard-with-league.png";
+import ballKnowledgeWizard1 from "../assets/images/ball-knowledge/wizard-step1-details.png";
+import ballKnowledgeScoring from "../assets/images/ball-knowledge/wizard-step2-scoring.png";
+import ballKnowledgeWizard3 from "../assets/images/ball-knowledge/wizard-step3-roster.png";
+import ballKnowledgeWizard4 from "../assets/images/ball-knowledge/wizard-step4-ownroster.png";
+import ballKnowledgeStandings from "../assets/images/ball-knowledge/league-standings.png";
+import ballKnowledgeRosterDetail from "../assets/images/ball-knowledge/roster-buttons-detail.png";
 import mealMatch from "../assets/images/mealMatch.png";
 import eCommerce from "../assets/images/eCommerce.png";
 import movieMatchMaker from "../assets/images/movieMatchMaker.png";
@@ -30,7 +57,45 @@ import stampedePlaying2 from "../assets/images/stampede-wild-rush-playing-02.png
 import stampedePlaying3 from "../assets/images/stampede-wild-rush-playing-03.png";
 import stampedePlaying4 from "../assets/images/stampede-wild-rush-playing-04.png";
 
+// Set `draft: true` on any project to hide it until it's ready.
+// Drafts show up when previewing: run with REACT_APP_SHOW_DRAFTS=true,
+// or add ?drafts to the URL (e.g. http://localhost:3000/?drafts).
+const SHOW_DRAFTS =
+  process.env.REACT_APP_SHOW_DRAFTS === "true" ||
+  (typeof window !== "undefined" && new URLSearchParams(window.location.search).has("drafts"));
+
+const isVisible = (project) => SHOW_DRAFTS || !project.draft;
+
 const professionalProjectsRaw = [
+  {
+    title: "Attractions Page Template",
+    date: "November 2026",
+    id: "attractionsPageTemplate",
+    images: [
+      attractionsHero,
+      attractionsRide,
+      attractionsQuickFacts,
+      attractionsMap,
+      attractionsSafety,
+      attractionsGallery,
+      attractionsRelated,
+      attractionsCta,
+    ],
+    beforeImage: attractionsBefore,
+    stat: { value: "+26%", label: "Engagement Time" },
+    description:
+      "A complete overhaul of the Typhoon Texas Houston Attractions page — rebuilt as a reusable template to make every ride page more exciting, relevant, modern, and easier for guests to use.",
+    highlights: [
+      "Hero banner with at-a-glance \"Best For\" and thrill-level badges so guests can size up a ride immediately",
+      "Quick Facts grid covering height, weight, rider configuration, duration, accessibility, and water depth",
+      "Interactive park map showing exactly where each ride is, with links to nearby attractions",
+      "Visual safety & restrictions guide, photo gallery, and \"You Might Also Love\" recommendations to keep guests exploring",
+      "Content managed through ACF fields, so new ride pages can be spun up from a single template",
+    ],
+    tech: ["PHP", "JavaScript", "HTML", "ACF", "AI-Assisted Development"],
+    skills: ["Template Design", "UX Design", "WordPress Development", "Content Architecture"],
+    deployedLink: "https://typhoontexas.com/attractions/typhoon-jr/",
+  },
   {
     title: "Stampede Wild Rush Video Game",
     date: "August 2026",
@@ -38,7 +103,7 @@ const professionalProjectsRaw = [
     images: [stampedeHero, stampedePlaying1, stampedePlaying2, stampedePlaying3, stampedePlaying4],
     description:
       "A browser-based water-slide runner game built as a promotional, lead-gen piece for Typhoon Texas water park, gated behind an email/SMS signup funnel.",
-    stat: { value: "1,000+", label: "New SMS Subscribers" },
+    stat: { value: "1,700+", label: "New SMS Subscribers" },
     story: [
       {
         heading: "The Challenge",
@@ -79,9 +144,9 @@ const professionalProjectsRaw = [
       {
         heading: "The Results",
         icon: "fa-solid fa-chart-line",
-        quote: "1,000+ subscribers in two weeks — and a brand experience nobody expected.",
+        quote: "1,700+ subscribers in two weeks — and a brand experience nobody expected.",
         paragraphs: [
-          "The campaign went off without a hitch. Within the first two weeks of launch, more than 1,000 people joined the Typhoon Texas SMS program — but the project accomplished more than growing a subscriber list.",
+          "The campaign went off without a hitch. Within the first two weeks of launch, more than 1,700 people joined the Typhoon Texas SMS program — but the project accomplished more than growing a subscriber list.",
         ],
         bullets: [
           "Guests got something immediate in return, not just the promise of future marketing messages: a unique, interactive experience built specifically for the Typhoon Texas brand",
@@ -193,6 +258,7 @@ const professionalProjectsRaw = [
     images: [calendar01, calendar02, calendar03],
     description:
       "A custom-built, full-featured events and operations calendar for Typhoon Texas Waterparks, dynamically pulling event and operating-hours data.",
+    stat: { value: "+33%", label: "Engagement Time" },
     highlights: [
       "Responsive, rolling calendar interface built with PHP, HTML, CSS, and JavaScript",
       "Updates in real time based on seasonal schedules and special events",
@@ -232,6 +298,7 @@ const professionalProjectsRaw = [
     images: [promo02, promo03],
     description:
       "A complete redesign of the Typhoon Texas promotion page to improve user engagement and conversion rates.",
+    stat: { value: "+37%", label: "Conversion Rate" },
     highlights: [
       "Drove a 37% increase in conversion rates from 2024 to 2025",
       "Modernized, mobile-friendly interface built for fast seasonal turnaround",
@@ -242,16 +309,18 @@ const professionalProjectsRaw = [
   },
 ];
 
-export const professionalProjects = [...professionalProjectsRaw].sort(
+export const professionalProjects = professionalProjectsRaw.filter(isVisible).sort(
   (a, b) => new Date(b.date) - new Date(a.date)
 );
 
-export const personalProjects = [
+const personalProjectsRaw = [
   {
     title: "The Mash Up",
     date: "June 2022",
     id: "theMashUp",
     description: "The Mash Up is an e-commerce application that allows users to sign up, login, shop for music related products, add them to their cart, and checkout. As well as post user generated items for sale. The application is built using React, Vite, Apollo Server, and GraphQL.",
+    stat: { value: "React", label: "+ GraphQL API" },
+    tech: ["React", "Vite", "Apollo Server", "GraphQL"],
     image: theMashUp,
     githubLink: "https://github.com/adamhood15/the-mash-up",
     deployedLink: "",
@@ -271,7 +340,9 @@ export const personalProjects = [
     date: "May 2022",
     id: "mealMatch",
     description:
-      "Forget everything you know about Meal Planning. Gone are the days of spending the bulk of your Sunday afternoon trying to figure out what your family wants to eat. No more wasting time putting together a grocery list of all the ingredients you need for each recipe. Let us help you take back your time and never look back.",
+      "A full-stack recipe discovery app with a RESTful API. Users generate recipes, save favorites to a personal recipe box stored in a database, and revisit them anytime — each recipe lists its ingredients and links back to the original source for full instructions.",
+    stat: { value: "REST", label: "API + Saved Recipes" },
+    tech: ["REST API", "Node.js", "Database"],
     image: mealMatch,
     githubLink: "https://github.com/Phil-Pfister/HWP_Meal-Planner",
     deployedLink: "",
@@ -292,6 +363,7 @@ export const personalProjects = [
     id: "weatherApp",
     description:
       "This application is a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve weather data for cities. This application uses localStorage to store any persistent data.",
+    stat: { value: "API", label: "OpenWeather Integration" },
     image: weatherApp,
     githubLink: "https://github.com/adamhood15/weather-app",
     deployedLink: "https://adamhood15.github.io/weather-app/",
@@ -302,6 +374,7 @@ export const personalProjects = [
     id: "readMeGenerator",
     description:
       "This application is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. This application uses the Inquirer package to prompt the user for their GitHub username and other information pertaining to the project the README is for.",
+    stat: { value: "CLI", label: "Node.js + Inquirer" },
     image: readMeGenerator,
     githubLink: "https://github.com/adamhood15/readme-generator",
     deployedLink: "",
@@ -311,18 +384,71 @@ export const personalProjects = [
     date: "April 2022",
     id: "eCommerce",
     description:
-      "This application is the back end for an e-commerce site. It uses the latest technologies to ensure that your e-commerce site is running smoothly and efficiently. This application uses Express.js API and Sequelize to interact with a MySQL database.",
+      "A fully functional e-commerce back end API built with Express.js, using Sequelize and MySQL2 to model and query products, categories, and tags.",
+    stat: { value: "REST", label: "API + ORM" },
+    tech: ["Express.js", "Sequelize", "MySQL2"],
     image: eCommerce,
     githubLink: "https://github.com/adamhood15/e-commerce-back-end",
     deployedLink: "",
   },
+  {
+    title: "Ball Knowledge",
+    date: "July 2026",
+    id: "ballKnowledge",
+    description:
+      "A scoring-settings-aware fantasy football trade analyzer, built as an installable PWA. Trades are evaluated against a league's actual rules — PPR vs. standard, TE premium, superflex — rather than a generic, one-size-fits-all ranking.",
+    stat: { value: "PWA", label: "Next.js + Prisma" },
+    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma"],
+    thumbnail: ballKnowledgeLogo,
+    thumbnailFit: "contain",
+    thumbnailBg: "rgb(24, 0, 65)",
+    images: [
+      ballKnowledgeSignIn,
+      ballKnowledgeDashboardEmpty,
+      ballKnowledgeDashboard,
+      ballKnowledgeWizard1,
+      ballKnowledgeScoring,
+      ballKnowledgeWizard3,
+      ballKnowledgeWizard4,
+      ballKnowledgeStandings,
+      ballKnowledgeRosterDetail,
+    ],
+    githubLink: "https://github.com/adamhood15/ball-knowledge",
+    deployedLink: "",
+  },
+  {
+    title: "Draft House",
+    date: "October 2026",
+    id: "draftHouse",
+    draft: true,
+    description:
+      "A private, real-time fantasy football draft app. Import an existing Sleeper league, invite league members by shared link, and host a live draft with walk-up music, chat, and emoji reactions — built around a bold, comic-panel-style design system with thick black outlines and hard offset shadows.",
+    stat: { value: "Realtime", label: "Supabase-Powered Draft Room" },
+    tech: ["Next.js", "React", "TypeScript", "Supabase", "Tailwind CSS"],
+    thumbnail: draftHouseLogo,
+    thumbnailFit: "contain",
+    thumbnailBg: "#fffbea",
+    images: [
+      draftHouseLanding,
+      draftHouseLogin,
+      draftHouseHome,
+      draftHouseSetup,
+      draftHouseLobby,
+      draftHouseDraft,
+      draftHousePlayers,
+    ],
+    githubLink: "https://github.com/adamhood15/draft-house",
+    deployedLink: "",
+  },
 ];
+
+export const personalProjects = personalProjectsRaw.filter(isVisible);
 
 export const allProjects = [
   ...professionalProjects.map((project) => ({ ...project, category: "professional" })),
   ...personalProjects.map((project) => ({
     ...project,
     category: "personal",
-    images: [project.image],
+    images: project.images || [project.image],
   })),
 ].sort((a, b) => new Date(b.date) - new Date(a.date));

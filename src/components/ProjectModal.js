@@ -36,7 +36,7 @@ export default function ProjectModal({ project, onClose }) {
         </button>
 
         <div className="project-modal-scroll">
-          <CaseStudyGallery images={project.images} title={project.title} />
+          <CaseStudyGallery images={project.images} beforeImage={project.beforeImage} title={project.title} />
 
           <div className="project-modal-content">
             <div className="project-modal-meta">

@@ -11,6 +11,15 @@ import { ACCENT_COLORS, ACCENT_CLASS_NAMES } from "../constants/colors";
 
 const CONTACT_EMAIL = "adamhood15@gmail.com";
 
+const TECH_COUNT = new Set(allProjects.flatMap((project) => project.tech || [])).size;
+
+const IMPACT_STATS = [
+  { value: "4+", label: "Years Building for the Web", accent: "accent-blue" },
+  { value: "180+", label: "Emails Delivered", accent: "accent-red" },
+  { value: `${TECH_COUNT}+`, label: "Technologies Used", accent: "accent-green" },
+  { value: `${allProjects.length}+`, label: "Projects Shipped", accent: "accent-yellow" },
+];
+
 export default function Timeline() {
   const [timelineRef, timelineProgress] = useScrollProgress();
   const [selectedProject, setSelectedProject] = useState(null);
@@ -31,6 +40,17 @@ export default function Timeline() {
             
           </p>
         </div>
+      </section>
+
+      <section className="timeline-impact">
+        <Reveal className="timeline-impact-inner">
+          {IMPACT_STATS.map((stat) => (
+            <div key={stat.label} className={`timeline-impact-stat ${stat.accent}`}>
+              <span className="timeline-impact-value">{stat.value}</span>
+              <span className="timeline-impact-label">{stat.label}</span>
+            </div>
+          ))}
+        </Reveal>
       </section>
 
       <section className="timeline-track" id="timeline" ref={timelineRef}>

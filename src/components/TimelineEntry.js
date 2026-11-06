@@ -72,6 +72,11 @@ export default function TimelineEntry({ project, index, isLeft, accentClassName,
               className="timeline-entry-image"
               src={project.thumbnail || project.images[0]}
               alt={project.title}
+              style={
+                project.thumbnailFit === "contain"
+                  ? { objectFit: "contain", backgroundColor: project.thumbnailBg || "#ffffff" }
+                  : undefined
+              }
             />
           </div>
           <h3 className="timeline-entry-title">{project.title}</h3>

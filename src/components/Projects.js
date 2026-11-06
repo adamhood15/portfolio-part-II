@@ -11,7 +11,7 @@ export default function Projects() {
             id={project.id}
             className={`case-study${i % 2 === 1 ? " case-study-reverse" : ""}`}
           >
-            <CaseStudyGallery images={project.images} title={project.title} />
+            <CaseStudyGallery images={project.images} beforeImage={project.beforeImage} title={project.title} />
             <div className="case-study-content">
               <h3 className="case-study-title">{project.title}</h3>
               <p className="case-study-description">{project.description}</p>
