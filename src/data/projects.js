@@ -339,6 +339,7 @@ const personalProjectsRaw = [
     title: "Meal Match",
     date: "May 2022",
     id: "mealMatch",
+    draft: true,
     description:
       "A full-stack recipe discovery app with a RESTful API. Users generate recipes, save favorites to a personal recipe box stored in a database, and revisit them anytime — each recipe lists its ingredients and links back to the original source for full instructions.",
     stat: { value: "REST", label: "API + Saved Recipes" },
@@ -361,6 +362,7 @@ const personalProjectsRaw = [
     title: "Weather App",
     date: "February 2022",
     id: "weatherApp",
+    draft: true,
     description:
       "This application is a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS. It uses the OpenWeather API to retrieve weather data for cities. This application uses localStorage to store any persistent data.",
     stat: { value: "API", label: "OpenWeather Integration" },
@@ -372,6 +374,7 @@ const personalProjectsRaw = [
     title: "Read Me Generator",
     date: "March 2022",
     id: "readMeGenerator",
+    draft: true,
     description:
       "This application is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. This application uses the Inquirer package to prompt the user for their GitHub username and other information pertaining to the project the README is for.",
     stat: { value: "CLI", label: "Node.js + Inquirer" },
